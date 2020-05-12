@@ -36,7 +36,7 @@ public class Client {
             while (!input.equals("quit")) {
 
                 input=JOptionPane.showInputDialog(null, input,"Say Something",JOptionPane.INFORMATION_MESSAGE);
-                System.out.println(input);
+                    out.println(input);
                 if (input.equals("quit")){
                     in.close();
                     out.close();

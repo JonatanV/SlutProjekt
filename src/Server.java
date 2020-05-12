@@ -39,6 +39,10 @@ public class Server {
                 System.out.println("Sending feedback");
                 out.println("SERVER: Welcome " + name + "! Keep up the good work");
 
+                while(!name.equals("quit")){
+
+                }
+
                 in.close();
                 out.close();
                 socket.close();
