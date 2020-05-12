@@ -6,7 +6,7 @@
   * Lektion 1
     >Planering och det ska va klart 
   * Lektion 2
-    > Uppkoppling
+    > Uppkoppling fungerar kan anskuta till servern 
   * Lektion 3
     > Chattfunktion
   * Lektion 4
