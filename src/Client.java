@@ -32,11 +32,16 @@ public class Client {
             String msg = in.readLine();
             JOptionPane.showMessageDialog(null,msg,"Server said",JOptionPane.INFORMATION_MESSAGE);
 
-            while (msg != "quit") {
-                msg = in.readLine();
-                JOptionPane.showInputDialog(null, msg,"Say Something");
-                if (msg == "quit"){
-                    break;
+            String input = " ";
+            while (!input.equals("quit")) {
+
+                input=JOptionPane.showInputDialog(null, input,"Say Something",JOptionPane.INFORMATION_MESSAGE);
+                System.out.println(input);
+                if (input.equals("quit")){
+                    in.close();
+                    out.close();
+                    socket.close();
+                    System.out.println("Done!");
                 }
             }
 
